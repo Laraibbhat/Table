@@ -1,18 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package shuffling;
 
 import java.util.Random;
-//import static shuffling.Shuffling.assign;
-//import static shuffling.Shuffling.assignBE;
 
-/**
- *
- * @author laraib
- */
 public class methods {
       static String[][] assignSE =new String[5][7];
       public static String[][] assign =new String[5][7];
@@ -188,8 +178,8 @@ public class methods {
   static  void print(String[][] love,String heading){
       
   
-    System.out.println("\n-----------------------------------------------------------------------------------------------------------------");
-     System.out.println("------------------------------------------------------------------------------------------------------------------");
+    //System.out.println("\n-----------------------------------------------------------------------------------------------------------------");
+     //System.out.println("------------------------------------------------------------------------------------------------------------------");
     System.out.println("\n\t\t\t\t"+heading+"\n\n");
      System.out.println("------------------------------------------------------------------------------------------------------------------");
       System.out.println("-----------------------------------------------------------------------------------------------------------------");
@@ -206,10 +196,10 @@ public class methods {
     }
   
   
-   static  void shift(String[][] love){
+   static  String[][] shift(String[][] love){
       
          Random random = new Random();
-         System.out.println(love.length+"\t"+love[0].length);
+        // System.out.println(love.length+"\t"+love[0].length);
 int numberOfValues = love.length * love[0].length;
 for (int i = numberOfValues - 1; i > 0; i--) {
     int index = random.nextInt(i);
@@ -221,7 +211,7 @@ for (int i = numberOfValues - 1; i > 0; i--) {
     love[row][column] = love[randomRow][randomColumn];
     love[randomRow][randomColumn] = temp;
 }
-   
+   return love;
     }
    
    
@@ -277,9 +267,5 @@ for (int i = numberOfValues - 1; i > 0; i--) {
         
         return profTE;
     }
-    
-    
    
-    
-    
 }

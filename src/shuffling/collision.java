@@ -1,18 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package shuffling;
 
-/**
- *
- * @author laraib
- */
 public class collision {
     static String[][] proffTE=new String[5][7];
      static String[][] proffSE=new String[5][7];
      static String[][] proffBE=new String[5][7];
+      
      
      
      
@@ -55,9 +48,7 @@ public class collision {
                     proffTE[i][j]="ENJOY";
                 
                 }
-                
-            
-            
+              
             }
         
         
@@ -167,10 +158,7 @@ public class collision {
         return proffBE;
     }
     
-    
-    
-    
-    
+     
     
     }
     
