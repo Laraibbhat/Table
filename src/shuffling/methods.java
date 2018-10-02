@@ -177,7 +177,7 @@ public class methods {
     
   static  void print(String[][] love,String heading){
       
-  
+  int l=0;
     //System.out.println("\n-----------------------------------------------------------------------------------------------------------------");
      //System.out.println("------------------------------------------------------------------------------------------------------------------");
     System.out.println("\n\t\t\t\t"+heading+"\n\n");
@@ -187,6 +187,11 @@ public class methods {
             System.out.println("\n");
              System.out.print(source.Days[i]+"\t\t");
             for(int j=0;j<7;j++){
+                 if(i==l &&j==3){
+                    
+                            System.out.print("BREAK\t");
+                            l++;
+                 }
             
             System.out.print(love[i][j]+"      ");
             }
@@ -197,7 +202,8 @@ public class methods {
   
   
    static  String[][] shift(String[][] love){
-      
+      int l=0;
+       System.out.println("CheckPoint shift");
          Random random = new Random();
         // System.out.println(love.length+"\t"+love[0].length);
 int numberOfValues = love.length * love[0].length;
@@ -211,6 +217,31 @@ for (int i = numberOfValues - 1; i > 0; i--) {
     love[row][column] = love[randomRow][randomColumn];
     love[randomRow][randomColumn] = temp;
 }
+        for(int i=0;i<5;i++){
+            for(int j=0;j<7;j++){
+                   // System.out.println(love[i][j]+"\t"+i+j);
+                if(love[i][1]=="TOC"||love[i][1]=="ISEE"||love[i][2]=="TOC"
+                   ||love[i][2]=="ISEE"||love[i][1]=="SDl tut(2)"||love[i][2]=="SDl tut(2)"){
+                    l++;
+                    System.out.println("CheckPoint ******");
+                    shift(love);
+                
+                
+                }
+                
+                if(love[i][1]=="DSA"||love[i][2]=="DSA"){
+                
+                shift(love);
+                
+                }
+            
+            
+            }
+   
+   
+   }
+
+
    return love;
     }
    

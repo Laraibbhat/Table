@@ -10,7 +10,7 @@ public class source {
            public static    String[] subjectSE={"DM","DELD","COA","DSA","OOP","Practical","FREE"};
    
    
-   public static String[] Days={"MONDAY","Tuesday","Wensday","Thursday","Friday"};
+   public static String[] Days={"MONDAY","Tuesday","Wensday","Thurs","Friday"};
    public static String[] Time={"10:15","11:15","12:15","1:45","2:45","3:45","4.45"};
    
    

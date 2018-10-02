@@ -22,22 +22,22 @@ static String[][] TEfinal =new String[5][7];
        methods.assignTE();
       methods.shift(methods.assign);
      
-     methods.assignBE();
+    methods.assignBE();
       methods.shift(methods.assignBE);
-        methods.assignSE();
-      methods.shift(methods.assignSE);
+       methods.assignSE();
+    methods.shift(methods.assignSE);
      
-     collision.proff_TE(methods.assign);
-    collision.proff_SE(methods.assignSE);
+    collision.proff_TE(methods.assign);
+   collision.proff_SE(methods.assignSE);
     collision.proff_BE(methods.assignBE);
-     newBEproff=collisionRemoval.colli(collision.proffTE,collision.proffBE);
+   newBEproff=collisionRemoval.colli(collision.proffTE,collision.proffBE);
    newSEproff=collisionRemoval.colli2(newBEproff,collision.proffSE);
   
     SEfinal=collisionRemoval.proff_SE_sub(newSEproff);
    // collisionRemoval.practical(SEfinal);
     methods.print(SEfinal,"TIMETABLE OF SE");
-    TEfinal=collisionRemoval.proff_TE_sub(collision.proffTE);
-   BEfinal= collisionRemoval.proff_BE_sub(newBEproff);
+   TEfinal=collisionRemoval.proff_TE_sub(collision.proffTE);
+     BEfinal= collisionRemoval.proff_BE_sub(newBEproff);
    methods.print(TEfinal,"TIMETABLE OF TE");
    methods.print(BEfinal,"TIMETABLE OF BE");
      //methods.print(collisionRemoval.finalTE, "heading");
@@ -45,7 +45,7 @@ static String[][] TEfinal =new String[5][7];
     // methods.print(collisionRemoval.newproffSE, "heading");
      
    // methods.print(methods.assignSE,"TIMETABLE OF SE");
-     //  methods.print(methods.assign,"TIMETABLE OF TE");
+      // methods.print(methods.assign,"TIMETABLE OF TE");
        //methods.print(methods.assignBE,"TIMETABLE OF BE");
       
       

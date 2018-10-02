@@ -237,36 +237,13 @@ public class collisionRemoval {
     }
          
          
-         public static String[][] practical(String[][] love){
-             int l=0;
-             for(int i=0;i<5;i++){
-                 for(int j=0;j<8;j++){
-                     
-                     if(i==l && j==3){
-                         
-                     
-                     
-                     
-                     
-                     
-                     }
-                 
-                     
-                 
-                 
-                 
-                 }
-             
-             
-             
-             }
          
          
          
          
          
-         return null;
+         
          }
          
     
-}
+
